@@ -39,23 +39,19 @@
         </nav>
     </header>
 
-
     <main class="container py-5">
         <div class="text-center py-4 text-light bg-dark">
-            <h1><i class="fab fa-python"></i> Exercícios Python - EX004</h1>
+            <h1><i class="fab fa-python"></i> Exercícios Python - EX001</h1>
 
             <section class="p-5 rounded text-light shadow-lg" id="terminal">
-                <h2 class="mb-3" ,>Cálculo para pintura de parede</h2>
-                <p class="lead">Este programa calcula a área de uma parede e a quantidade de tinta necessária para
-                    pintá-la.</p>
+                <h2 class="mb-3">Antecessor e Sucessor</h2>
+                <p class="lead">O programa pede um número e entra seu antecessor e sucessor</p>
 
                 <textarea id="codigoPython" class="form-control bg-dark text-success border-success p-3" rows="6">
-                a = float(input('Qual a altura da parede?'))
-                b = float(input('Qual a largura da parede?'))
-                area = a * b
-                tinta = area / 2
-                print(f'A área a ser pintada é de {area:.2f}, serão necessários {tinta:.2f} litros de tinta.')
-            </textarea>
+numero = int(input("Digite um número inteiro: "))
+print(f"Antecessor: {numero - 1}")
+print(f"Sucessor: {numero + 1}")
+                </textarea>
 
                 <button id="executar" class="btn btn-success mt-3 w-100 fw-bold shadow"><i class="fas fa-play"></i>
                     Executar Código</button>
@@ -68,10 +64,10 @@
              <section class="dicas mt-4">
                 <h3>Dicas sobre o código</h3>
                 <ul>
-                    <li ><strong>"float(input())"</strong>: Converte a entrada do usuário em número decimal.</li>
-                    <li></i><strong>Área da parede</strong>: Multiplicamos altura pela largura.</li>
-                    <li><strong>Divisão por 2</strong>: Assumimos que 1 litro de tinta cobre 2m².</li>
-                    <li><strong>f-strings</strong>: Utilizadas para formatar a saída do print.</li>
+                    <li><strong>"int(input())"</strong>: Converte a entrada do usuário para um número inteiro.</li>
+                    <li><strong>Operações aritméticas</strong>: O código realiza adição e subtração para encontrar o sucessor e antecessor.</li>
+                    <li><strong>f-strings</strong>: Usadas para formatar a saída de texto no print.</li>
+                    <li><strong>Entrada do usuário</strong>: O código usa a função <strong>input()</strong> para pegar a entrada do usuário.</li>
                 </ul>
             </section>
         </div>
@@ -112,14 +108,3 @@ def input(prompt_text=""):
 </body>
 
 </html>
-
- <!-- Prompt para facilitar a criação de novos exercícios -->
-    <!--
-        Substitua no código abaixo:
-        - EX004 pelo número do próximo exercício (EX002, EX003, ...)
-        - O conteúdo de <h2 class="mb-3"> pelo novo título: 
-        - O conteúdo de <p class="lead"> pela nova descrição: 
-        - O código dentro de <textarea> id="codigoPython" pelo novo código Python: 
-        - crie novas dicas dentro da <ul> para refletir os conceitos usados
-        - código HTML:
-    -->
